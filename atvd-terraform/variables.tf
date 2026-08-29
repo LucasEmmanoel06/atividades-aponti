@@ -4,6 +4,6 @@ variable "region" {
     type = string
     validation {
         condition = containers([us-east-1, us-east-2, sa-east-1], var.region)
-      error_message = "value"
+        error_message = "Erro: A região informada não é válida. As regiões válidas são: us-east-1, us-east-2, sa-east-1"
     }
 }
