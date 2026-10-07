@@ -1,1 +1,12 @@
-
+apiVersion: v1
+kind: Pod
+metadata:
+  name: django-crud-pod
+  labels:
+    app: django-crud
+spec:
+  containers:
+    - name: django-crud
+      image: lucasemmanoel06/django_crud:1.0
+      ports:
+        - containerPort: 8000
